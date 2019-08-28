@@ -1,0 +1,105 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    /* margin: 0;    
+       padding: 0;  */   
+    transition: .3s all ease;
+    /* background: blue; */
+    box-sizing: border-box;
+}
+
+.wrapper{
+	background: grey;
+	height: 800px;
+	width: 90%;
+   /*  min-width: 500px;    (минимальная ширина сайта)
+   max-width: 1200px; */
+}
+
+/* header================================================= */
+
+.header{
+	width:100%;
+	height: 100px;
+	background: red;
+}
+
+
+.triangles{
+	height: 100px;
+	width: 100px;
+	background: black;
+}
+
+/* three-blocks============================================== */
+
+.three-blocks {
+	display: flex;
+	align-items: center;
+    justify-content: space-between; 
+}
+
+/* left-block============================================== */
+
+.left-block {
+	height: 590px;
+	width: 50%;
+	background: green;
+	margin-left: 1%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+.top-left-block{
+	width: 100%;
+	height: 50%;
+	background: yellow;
+	
+}
+.bottom-left-block{
+	width: 100%;
+	height: 50%;
+	background: blue;
+
+}
+
+
+/* center-block =================================================*/
+
+.center-block {
+	height: 590px;
+	width: 30%;
+	background: green;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.top-center-block{
+	width: 100%;
+	height: 60%;
+	background: yellow;
+	
+}
+.bottom-center-block{
+	width: 100%;
+	height: 40%;
+	background: blue;
+	
+}
+/* right-block===================================================== */
+
+.right-block {
+	height: 590px;
+	width: 17%;
+	background: green;
+
+}
+/* footer========================================================= */
+
+.footer{
+	height: 100px;
+	width: 100%;
+	background: black;
+	
+
+}
+
+
