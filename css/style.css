@@ -5,6 +5,9 @@
     /* background: blue; */
     /* box-sizing: border-box; */
 }
+p{
+	color: white;
+}
 
 .wrapper{
 	background: grey;
@@ -17,9 +20,12 @@
 /* header================================================= */
 
 .header{
-	width:100%;
 	height: 100px;
 	background: red;
+	display: flex;
+	align-items: center;
+    justify-content: space-between; 
+
 }
 
 
@@ -29,6 +35,121 @@
 	background: black;
 }
 
+.search-box {
+    display: inline-block;
+    margin-left: 1px;
+}
+
+.container-2 {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.container-2 input#search {
+    width: 50px;
+    height: 50px;
+    background: #ffcc00;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: black;
+    padding-left: 35px;    /* -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; */
+    color: #fff;
+
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+}
+
+.container-2 input#search::-webkit-input-placeholder {
+    color: #;
+}
+
+.container-2 input#search:-moz-placeholder {
+    color: #65737e;
+}
+
+.container-2 input#search::-moz-placeholder {
+   color: #65737e;
+}
+
+.container-2 input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+
+.container-2 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: black;
+}
+
+.container-2 input#search:focus,
+.container-2 input#search:active {
+    outline: none;
+    width: 300px;
+}
+
+.container-2:hover input#search {
+    width: 300px;
+}
+
+.container-2:hover .icon {
+    color: #93a2ad;
+}
+
+.header-menu {
+    text-align: center;    /* выравнивание текста по центру*/
+}
+
+.header-menu li {
+    display: inline-block;
+    margin: auto;
+}
+
+/* .header-menu li:first-child a { (обращение к 1 элеиенту в списке)
+	border-left: none; 
+} */
+.header-menu a {
+    /* background: green; */
+    text-transform: uppercase;    /* (все заглавные буквы) */
+    font-size: 10px;    /* (размер шрифта) */
+    line-height: 50px;    /* (высота строки) */
+    font-weight: 500;    /* (ширина шрифта) */
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    display: block;    /*  border-left: 5px solid red; */
+}
+
+.header-menu li a:hover {
+    /* (эффект появления) */
+    background: #ffcc00;
+    color: black;
+}
+
+.header-menu span {
+    color: #dcdcdc;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle li {
+    width: 40px;
+    height: 2px;
+    margin-bottom: 10px;
+    background: #000;
+}
 /* three-blocks============================================== */
 
 .three-blocks {
@@ -49,15 +170,15 @@
 
 }
 .top-left-block{
-	width: 100%;
-	height: 50%;
+	height: 49%;
 	background: yellow;
+	margin-bottom: 10px;
 	
 }
 .bottom-left-block{
-	width: 100%;
-	height: 50%;
+	height: 49%;
 	background: blue;
+	margin-top: 10px;
 
 }
 
@@ -72,30 +193,39 @@
 	padding-bottom: 10px;
 }
 .top-center-block{
-	width: 100%;
-	height: 60%;
+	height: 58%;
 	background: yellow;
+	padding-bottom: 10px;
 	
 }
 .bottom-center-block{
-	width: 100%;
-	height: 40%;
+	height: 38%;
 	background: blue;
-	
+	margin-top: 10px;
 }
 /* right-block===================================================== */
 
 .right-block {
-	height: 590px;
+	height: 620px;
 	width: 17%;
 	background: green;
 
+}
+
+.top-right-block{
+	height: 50%;
+	background: brown;
+		
+}
+.bottom-right-block{
+	height: 50%;
+	background: yellow;
+	
 }
 /* footer========================================================= */
 
 .footer{
 	height: 100px;
-	width: 100%;
 	background: black;
 	
 

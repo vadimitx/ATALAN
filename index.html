@@ -3,14 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Atalan</title>
-	  <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
 		<div class="header">
-			<div class="triangles"></div>
+			<div class="triangles"><p>Logo</p></div>
+			<div class="search-box">
+                <div class="container-2">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search paynents, transfers, transactions..." />
+                </div>
+            </div>
+			<div class="header-menu">
+	            <ul>
+	                <li><a href="#" class="btn">Dashboard</a></li>
+	                <li><a href="#" class="btn">Transfers</a></li>
+	                <li><a href="#" class="btn">Payments</a></li>
+	                <li><a href="#" class="btn">Recent Transactions</a></li>
+	                <li><a href="#" class="btn">Loan</a></li>
+	                <li><a href="#" class="btn">Online Support</a></li>
+	            </ul>
+	        </div>
+	        <div class="photo-name">
+	        	<img src="" alt="">
+	        	<p>Ertugrul Cevahir</p>
+	        </div>
 		</div>
 		<div class="three-blocks">
 			<div class="left-block">
@@ -29,7 +50,15 @@
 						// Create a new line chart object where as first parameter we pass in a selector
 						// that is resolving to our chart container element. The Second parameter
 						// is the actual data object.
-						new Chartist.Line('.ct-chart', data);
+						new Chartist.Line('.ct-chart', {
+						  labels: [1, 2, 3, 4, 5, 6, 7, 8],
+						  series: [
+						    [5, 9, 7, 8, 5, 3, 5, 4]
+						  ]
+						}, {
+						  low: 0,
+						  showArea: true
+						});
 					</script>
 				</div>
 				<div class="bottom-left-block">
@@ -46,10 +75,10 @@
 			</div>
 			<div class="right-block">
 				<div class="top-right-block">
-					
+					<p>Recurrring Payments</p>
 				</div>
 				<div class="bottom-right-block">
-					
+					<p>Recent Transactions</p>
 				</div>
 			</div>			
 		</div>
