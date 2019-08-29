@@ -10,7 +10,7 @@ p {
 .wrapper{
     background: black;
     height: 800px;
-    width: 90%;
+    width: 1200px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,7 +19,7 @@ p {
 /* =========================header====================== */
 .header{
 	height: 70px;
-	background: #383535;
+	background: #101010;
 	display: flex;
 	align-items: center;
     justify-content: space-between; 
@@ -57,15 +57,31 @@ p {
 }
 .top-left-block {
 	height: 300px;
-	background: #383535;    
+	background: #101010;    
 	margin-bottom: 20px;
+}
+.top-left-block-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-left-block-head li{
+	display: inline-block;
 }
 .bottom-left-block {
 	height: 300px;
-	background: #383535;
+	background: #101010;
+}
+.bottom-left-block-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-left-block-head li{
+	display: inline-block;
 }
 .ct-chart{
-    height: 100%;
+    height: 90%;
 }
 /* ============================block-center============================ */
 .block-center {
@@ -76,13 +92,13 @@ p {
 }
 .top-center-block{
 	height: 400px;
-	background: #383535;	
+	background: #101010;	
     margin-bottom: 20px;
 	
 }
 .bottom-center-block{
 	height: 200px;
-	background: #383535;
+	background: #101010;
 }
 /* ===========================block-right============================ */
 .block-right {
@@ -93,13 +109,13 @@ p {
 
 .top-right-block{
 	height: 320px;
-	background: #383535;
+	background: #101010;
     margin-top: 1px;
     
 }
 .bottom-right-block{
 	height: 320px;
-	background: #383535;
+	background: #101010;
     margin-top: 1px;
  }
 
@@ -111,3 +127,41 @@ p {
     
 } */
 	
+/* ============================slider=========================== */
+
+.slider {
+	width: 100%;
+	
+}
+.slide-title {
+	display: flex;
+	justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.slider .slide {
+	background: url(http://lorempixel.com/400/150/) no-repeat;
+	background-size: contain;
+	height: 150px;	
+	background-position: center;
+}
+.slider .slide {
+	opacity: .5;
+}
+
+.slider .slick-current {
+	opacity: 1;
+}
+
+.slide p {
+	/*position: absolute;
+	bottom: -20px;*/
+}
+
+.slide-title i {
+	border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    
+}

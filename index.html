@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-	    <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="css/style.css">
 	<title>Atalan</title>
 </head>
@@ -32,37 +32,42 @@
 		</div>
 		<div class="three-blocks">
 			<div class="block-left">		
-				<div class="top-left-block"><p>top-left-block</p>
+				<div class="top-left-block">
+					<div class="top-left-block-head">
+						<p>Balance</p>					
+					  	<ul id="tabs-chart">
+					      <li><a id="tab1" class="active">TL</a></li>
+					      <li><a id="tab2">EURO</a></li>
+					      <li><a id="tab3">USD</a></li>
+						</ul>	
+					</div>					
 					<div class="ct-chart ct-perfect-fourth"></div>
-					<script>
-						var data = {
-						  // A labels array that can contain any sort of values
-						  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-						  // Our series array that contains series objects or in this case series data arrays
-						  series: [
-						    [5, 2, 4, 2, 0]
-						  ]
-						};
 					
-						// Create a new line chart object where as first parameter we pass in a selector
-						// that is resolving to our chart container element. The Second parameter
-						// is the actual data object.
-						new Chartist.Line('.ct-chart', {
-						  labels: [1, 2, 3, 4, 5, 6, 7, 8],
-						  series: [
-						    [5, 9, 7, 8, 5, 3, 5, 4]
-						  ]
-						}, {
-						  low: 0,
-						  showArea: true
-						});
-					</script>
 				</div>
-				<div class="bottom-left-block"><p>bottom-left-block</p>				
+				<div class="bottom-left-block">
+					<div class="bottom-left-block-head">
+						<p>Balance</p>					
+					  	<ul id="tabs-chart">
+					      <li><a id="tab1" class="active">TL</a></li>
+					      <li><a id="tab2">EURO</a></li>
+					      <li><a id="tab3">USD</a></li>
+						</ul>	
+					</div>									
 				</div>
 			</div>
 			<div class="block-center">
-				<div class="top-center-block">					
+				<div class="top-center-block">
+					<div class="top-center-block-head">Credit Cards</div>
+					<div class="slider">
+						  <div class="slide"></div>
+						  <div class="slide"></div>
+						  <div class="slide"></div>
+					</div>
+					<div class="slide-title">		
+						  <p>lorem 1</p>
+						  <p>lorem 2</p>
+						  <p>lorem 3</p>
+					</div>
 				</div>
 				<div class="bottom-center-block">
 					<div class="s-block1"><p>send</p></div>
@@ -81,5 +86,71 @@
 		</div>	
 		<!-- <div class="footer"></div> -->	
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+// CHART
+		var data = {
+		  // A labels array that can contain any sort of values
+		  labels: [1, 2, 3, 4, 5, 6],
+		  // Our series array that contains series objects or in this case series data arrays
+		  series: [
+		    [5, 2, 8, 7, 3, 5]
+		  ]
+		};
+	
+		// Create a new line chart object where as first parameter we pass in a selector
+		// that is resolving to our chart container element. The Second parameter
+		// is the actual data object.
+		var chart = new Chartist.Line('.ct-chart', {
+			  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+			  series: [
+			    [1, 5, 2, 5, 4, 3],
+			    [2, 3, 4, 8, 1, 2],
+			    [5, 4, 3, 2, 1, 0.5]
+			  ]
+			}, {
+			  low: 0,
+			  showArea: true,
+			  showPoint: false,
+			  fullWidth: true
+			});
+
+			chart.on('draw', function(data) {
+			  if(data.type === 'line' || data.type === 'area') {
+			    data.element.animate({
+			      d: {
+			        begin: 2000 * data.index,
+			        dur: 2000,
+			        from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+			        to: data.path.clone().stringify(),
+			        easing: Chartist.Svg.Easing.easeOutQuint
+			      }
+			    });
+			  }
+			});
+// CHART END
+
+// SLIDER
+$('.slider').slick({
+	asNavFor: '.slide-title',
+	centerMode: true,
+	centerPadding: '40px',
+	slidesToShow: 1,
+	arrows: false,
+});
+
+$('.slide-title').slick({
+	asNavFor: '.slider',
+	draggable: false,
+    centerPadding: '0px',
+    slidesToShow: 1,
+    prevArrow: '<i class="fas fa-chevron-left"></i>',
+    nextArrow: '<i class="fas fa-chevron-right"></i>',speed: 200,
+    fade: true,
+});
+// SLIDER END
+	</script>
 </body>
 </html>
