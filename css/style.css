@@ -40,7 +40,11 @@ p {
     margin-left: 10px;
     margin-right: 10px;
     color: white;
-    display: block;    
+    display: block;  
+    text-decoration: none;
+}
+.header-menu li a:hover {
+	color: blue;
 }
 /* =============================three-blocks======================== */
 .three-blocks {
@@ -65,16 +69,57 @@ p {
 	display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
+    height: 50px;
+    background: #1D1B1B;
+}
+.top-left-block-head p{
+	margin-left: 20px;
+}
+.top-left-block-head ul{
+	margin-right: 20px;
+}
+.top-left-block-head li{
+	display: inline-block;
+    margin-right: 10px;
+}
+.top-left-block-head li a:hover {
+	color: blue;
 }
 .bottom-left-block {
 	height: 300px;
 	background: #383535;
 }
-.bottom-left-block .title {
-	position: absolute;
+
+.bottom-left-block-head {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 50px;
+    background: #1D1B1B;
+}
+.bottom-left-block-head p{
+	margin-left: 20px;
+}
+.bottom-left-block-head ul{
+	margin-right: 20px;
+}
+.bottom-left-block-head li{
+	display: inline-block;
+    margin-right: 10px;
+}
+.bottom-left-block-head li a:hover {
+	color: blue;
 }
 .ct-chart{
     height: 100%;
+}
+.top-left-block-footer{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 /* ============================block-center============================ */
 .block-center {
@@ -89,10 +134,52 @@ p {
     margin-bottom: 20px;
 	
 }
+.top-center-block-head {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 50px;
+    background: #1D1B1B;
+    margin-bottom: 20px;
+}
+.top-center-block-head p{
+	margin-left: 20px;
+}
+.
+/*btn style*/
+/* a.wsbutton {
+    background: #ffcc00;    
+    border-radius: 40px;    радиус
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset;    внутрення тень
+    font-size: 24px;    
+    font-weight: bold;    
+    line-height: 1.5;   
+    padding: 10px 25px;    
+    margin: 0 auto;    выра
+    text-decoration: none;    
+    transition: all 0.3s;    
+} */
+
 .bottom-center-block{
 	height: 200px;
 	background: #383535;
 }
+.send-block1{
+	height: 66px;
+	background: #1D1B1B;
+	margin-bottom: 1px;
+}
+.send-block2{
+	height: 66px;
+	background: #1D1B1B;
+	margin-bottom: 1px;
+}
+.send-block3{
+	height: 66px;
+	background: #1D1B1B;
+}
+
 /* ===========================block-right============================ */
 .block-right {
 	width: 17%;
