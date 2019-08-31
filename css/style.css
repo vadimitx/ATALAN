@@ -3,9 +3,9 @@
 	padding: 0;
 }
 
-p {
+/* p {
 	color: white;
-}
+} */
 
 .wrapper{
     background: black;
@@ -35,7 +35,6 @@ p {
 }
 .header-menu a {        
     font-size: 14px;    
-    line-height: 50px;   
     font-weight: 800;    
     margin-left: 10px;
     margin-right: 10px;
@@ -49,8 +48,6 @@ p {
 .photo-name{
 	/* margin:0 auto; */
 	display: inline-block;
-
-
 }
 .photo-name img{
 	height: 40px;
@@ -162,8 +159,8 @@ p {
 
 .top-center-block {
 	height: 400px;
-	background: #383535;	
-    margin-bottom: 20px;	
+	background: red;
+	margin-bottom: 20px;	
 }
 .top-center-block-head {
 	display: flex;
@@ -172,14 +169,76 @@ p {
     color: white;
     height: 50px;
     background: #1D1B1B;
-    margin-bottom: 20px;
 }
+
 .top-center-block-head p{
 	margin-left: 20px;
 }
 .slide-title{
-	margin-top: 10px;
+	padding-top: 10px;
+	background: #383535;
 }
+.current-debt{
+	background: #383535;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+}
+.current-debt-name{
+	color: grey;
+	margin-left: 10px;
+}
+.current-debt-sum{
+	color: white;
+	margin-right: 10px;
+}
+.credit-available{
+	background: #383535;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.credit-available-name{
+	color: grey;
+	margin-left: 10px;
+}
+.current-debt-sum {
+	margin-right: 10px;
+}
+.cut-off-date-block{
+	margin-top: 1px;
+	background: #383535;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+}
+.cut-off-date-name {
+	color: grey;
+	margin-left: 10px;
+}
+.cut-off-date {
+	margin-right: 10px;
+	color: #5252ff; 
+}
+.two-buttons{
+	background: #383535;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+}
+.btn-left{
+	margin-left: 10px;
+}
+.btn-right{
+	margin-right: 10px;
+}
+
+
 /* ===========================bottom-center-block=========================== */
 
 .bottom-center-block{
@@ -191,6 +250,27 @@ p {
 	background: #1D1B1B;
 	margin-bottom: 1px;
 	background: #383535;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.name {
+	width: 100px;
+	color: white;
+	margin-left: 10px;
+}
+.tl-block {
+	width: 90px;
+	text-align: right;
+	color: gray;
+	border-bottom-width: 2px;   
+    border-bottom-style: solid;    
+    border-bottom-color: gray;
+    margin-left: 10px;  
+}
+.send-block{
+	color: #5252ff;
+	margin-left: 10px;
 }
 .bottom-center-block:last-child { 
 	margin-bottom: none; 
@@ -335,6 +415,8 @@ p {
 
 .slider {
 	width: 330px;
+	padding-top: 20px;
+	background: #383535;
 }
 .slide-title {
 	width: 330px;
