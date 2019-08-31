@@ -5,16 +5,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Atalan</title>
 </head>
 <body>
 <div class="wrapper">
     <div class="header">
-        <div class="triangles"><p>Logo</p>
+        <div class="logo">
+            <p>Logo</p>
         </div>
-        <div class="search-box"><p>search</p>
-        </div>
+         <div class="search-box">
+                <div class="container-2">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search Payments Transfers Transactions" />
+                </div>
+            </div>
         <div class="header-menu">
             <ul>
                 <li><a href="#" class="btn">Transfers</a></li>
@@ -26,7 +32,15 @@
         </div>
         <div class="photo-name">
             <img src="img/cat-circle.png" alt="">
-            <p>Ertugrul Cevahir</p>
+            <form action="formdata" method="post" name="form1">
+             <p><select name="list1">
+              <option value="4" selected>Ertugrul Cevahir</option>
+              <option value="1">Ertugrul Cevahir</option>
+              <option value="2">Cevahir Ertugrul</option>
+              <option value="3">Sapuf Cevahir</option>
+              <option value="5">Ertugrul Takis</option>
+             </select></p>
+            </form>
         </div>
     </div>
     <div class="three-blocks">
@@ -70,25 +84,29 @@
                             <li><a id="tab3">Mortgage</a></li>  
                         </ul>                   
                 </div>
-                <!--<div class="container" id="tab1C">1Some content</div>--><!-- <=== было так-->
-                <!-- стало такж: -->
                 <div class="container" id="tab1C">
                     <div class="container-content">
                         <div class="input-block">
                             <div class="loan-block">
-                                <label>loan Amount</label>
-                                <input type="text">
-                                <input type="range" min="0" max="10" step="1">
+                                <div class="upper">
+                                    <label>loan Amount</label>
+                                    <input type="text" class="loan" value="">
+                                </div>
+                                <input class="loan" type="range" min="10" max="1000" step="10" value="600" data-orientation="horizontal">
                             </div>
                             <div class="term-block">
-                                <label>Term</label>
-                                <input type="text">
-                                <input type="range" min="0" max="10" step="1">
+                                <div class="upper">
+                                    <label>Term</label>
+                                    <input class="term" type="text" value="">
+                                </div>
+                                <input class="term" type="range" min="10" max="1000" step="10" value="500" data-orientation="horizontal">
                             </div>
                             <div class="amount-block">
-                                <label>Installment Amount</label>
-                                <input type="text">
-                                <input type="range" min="0" max="10" step="1">
+                                <div class="upper">
+                                    <label>Installment Amount</label>
+                                    <input  class="amount"type="text" value="">
+                                </div>
+                                <input class="amount" type="range" min="10" max="1000" step="10" value="800" data-orientation="horizontal">
                             </div>
                         </div>
                         <div class="output-block">
@@ -158,10 +176,10 @@
                 </div>
                  <div class="two-buttons">
                     <div class="btn-left">
-                        <button>Pay the Debt</button>
+                        <a href="#" class="L-button">Pay the Debt</a>
                     </div>
                     <div class="btn-right">
-                        <button>Activity</button>
+                        <a href="#" class="R-button">Activity</a>
                     </div>
                 </div>
             </div>
@@ -213,9 +231,11 @@
         <div class="block-right">
             <div class="top-right-block">
                 <p>Recurrring Payments</p>
+                <img src="img/fade-freetoedit-bg.png" alt="">
             </div>
             <div class="bottom-right-block">
                 <p>Recent Transactions</p>
+                <img src="img/Pink-gradient-3.png" alt="">
             </div>
         </div>
     </div>
@@ -223,7 +243,8 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
 <script src="js/customSlider.js"></script>
 <script src="js/customChart.js"></script>
 <script src="js/customTab.js"></script>

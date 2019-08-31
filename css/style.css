@@ -19,15 +19,35 @@
 /* ===========================header=========================== */
 .header{
 	height: 70px;
-	background: #383535;
 	display: flex;
 	align-items: center;
     justify-content: space-between; 
 }
-.triangles{
+.logo{
 	height: 70px;
-	width: 70px;
-	background: black;
+	width: 80px;
+	background: #383535;
+	color: white;
+	margin-right: 1px;
+}
+.search-box{
+	color: white;
+	width: 412px;
+	height: 70px;
+	background: #383535;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 10px; 
+}
+
+.header-menu{
+	width: 500px;
+	height: 70px;
+	background: #383535;
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .header-menu li {
     display: inline-block;
@@ -36,22 +56,29 @@
 .header-menu a {        
     font-size: 14px;    
     font-weight: 800;    
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
     color: white;
     display: block;  
     text-decoration: none;
 }
 .header-menu li a:hover {
-	color: blue;
+	color: #5252ff;
 }
 .photo-name{
-	/* margin:0 auto; */
+	margin:0 auto;
 	display: inline-block;
+	width: 206px;
+	height: 70px;
+	background: #383535;
+	color: white;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .photo-name img{
 	height: 40px;
 	width: 40px;
+	margin-left: 20px;
 }
 
 /* =============================three-blocks======================== */
@@ -92,6 +119,9 @@
     background: #1D1B1B;
     position: relative;
 }
+.top-left-block-head a{
+	text-decoration: none;
+}
 .top-left-block-head p{
 	margin-left: 20px;
 }
@@ -103,11 +133,11 @@
     margin-right: 10px;
 }
 .top-left-block-head li a:hover {
-	color: blue;
+	color: #5252ff;
 }
 /* =============================bottom-left-block======================== */
 .bottom-left-block {
-	height: 300px;
+	min-height: 300px;
 	background: #383535;
 }
 /* .bottom-left-block .title {
@@ -133,7 +163,7 @@
     margin-right: 10px;
 }
 .bottom-left-block-head li a:hover {
-	color: blue;
+	color: #5252ff;
 }
 .ct-chart{
     height: 100%;
@@ -150,7 +180,7 @@
 	color: green;
 }
 .Euro p{
-	color: blue;
+	color: #5252ff;
 }
 .Usd p{
 	color: pink;
@@ -159,7 +189,6 @@
 
 .top-center-block {
 	height: 400px;
-	background: red;
 	margin-bottom: 20px;	
 }
 .top-center-block-head {
@@ -229,16 +258,48 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 10px;
+	height: 67px;
 }
 .btn-left{
 	margin-left: 10px;
+	width: 140px;
 }
 .btn-right{
 	margin-right: 10px;
+	width: 140px;
 }
-
-
+a.L-button {
+	background: none;
+    border-radius: 50px;
+    color: white;    
+    font-size: 14px;
+    margin: 0 auto;   
+    text-decoration: none;    
+    transition: all 0.3s;    
+    border: 2px solid #5252ff;
+    display: block;
+    text-align: center;
+    line-height: 2.5; 
+}
+.L-button:hover {
+    background: black;
+}
+a.R-button {
+	background: none;
+    border-radius: 50px;
+    color: white;    
+    font-size: 14px; 
+    margin: 0 auto;   
+    text-decoration: none;    
+    transition: all 0.3s;    
+    border: 2px solid #5252ff;
+    display: block;
+    text-align: center;
+    line-height: 2.5; 
+}
+.R-button:hover {
+    background: black;
+}
 /* ===========================bottom-center-block=========================== */
 
 .bottom-center-block{
@@ -273,7 +334,7 @@
 	margin-left: 10px;
 }
 .bottom-center-block:last-child { 
-	margin-bottom: none; 
+	margin-bottom: 0;
 }
 .s-block img{
 	height: 50px;
@@ -293,18 +354,24 @@
 .top-right-block{
 	height: 320px;
 	background: #383535;
-    margin-top: 1px;
-    
+    margin-top: 1px;    
+}
+.top-right-block img{
+	width: 50px;
+	height: 50px;
 }
 
-/* ===========================top-right-block============================ */
+/* ===========================bottom-right-block============================ */
 
 .bottom-right-block{
 	height: 320px;
 	background: #383535;
     margin-top: 1px;
  }
-
+.bottom-right-block img{
+	width: 50px;
+	height: 50px;
+}
  /* ==============================footer=============================== */
 
 /* .footer{
@@ -338,6 +405,27 @@
 }
 .bottom-left-block .container-content {
 	display: flex;
+}
+/*стили контента таба*/
+.input-block>div{
+	margin: 20px 0 30px;
+}
+.input-block .upper {
+	display: flex;
+	justify-content: space-between;
+}
+.rangeslider{
+	background: #151515;
+}
+.rangeslider--horizontal {
+	height: 4px;
+}
+.rangeslider__handle {
+	height: 22px;
+	width: 22px;
+}
+.rangeslider__fill {
+	background: #cfcfcf;
 }
 /*chart*/
 .chart{
