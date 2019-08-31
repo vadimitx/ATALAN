@@ -16,7 +16,7 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* =========================header====================== */
+/* ===========================header=========================== */
 .header{
 	height: 70px;
 	background: #383535;
@@ -46,19 +46,40 @@ p {
 .header-menu li a:hover {
 	color: blue;
 }
+.photo-name{
+	/* margin:0 auto; */
+	display: inline-block;
+
+
+}
+.photo-name img{
+	height: 40px;
+	width: 40px;
+}
+
 /* =============================three-blocks======================== */
 .three-blocks {
 	display: flex;
 	align-items: end;
     justify-content: space-around;
-   
 }
-/* ==============================block-left========================== */
 .block-left {
 	width: 50%;
 	margin-left: 20px;
 	margin-top: 20px;
 }
+.block-center {
+	width: 330px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.block-right {
+	width: 17%;
+    margin-left: 20px;
+    margin-right: 0;
+}
+/* ==============================top-left-block======================== */
+
 .top-left-block {
 	height: 300px;
 	background: #383535;    
@@ -72,6 +93,7 @@ p {
     color: white;
     height: 50px;
     background: #1D1B1B;
+    position: relative;
 }
 .top-left-block-head p{
 	margin-left: 20px;
@@ -86,11 +108,15 @@ p {
 .top-left-block-head li a:hover {
 	color: blue;
 }
+/* =============================bottom-left-block======================== */
 .bottom-left-block {
 	height: 300px;
 	background: #383535;
 }
-
+/* .bottom-left-block .title {
+	position: absolute;
+	top: 50%;
+} */
 .bottom-left-block-head {
 	display: flex;
     justify-content: space-between;
@@ -117,22 +143,27 @@ p {
 }
 .top-left-block-footer{
 	display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+	justify-content: space-around;
+	align-items: center;
+	height: 50px;
+	position: absolute;
+	top: 40%;
 }
-/* ============================block-center============================ */
-.block-center {
-	width: 330px;
-	margin-left: 20px;
-	margin-top: 20px;
-
+.TL p{
+	color: green;
 }
-.top-center-block{
+.Euro p{
+	color: blue;
+}
+.Usd p{
+	color: pink;
+}
+/* ============================top-center-block============================ */
+
+.top-center-block {
 	height: 400px;
 	background: #383535;	
-    margin-bottom: 20px;
-	
+    margin-bottom: 20px;	
 }
 .top-center-block-head {
 	display: flex;
@@ -146,46 +177,38 @@ p {
 .top-center-block-head p{
 	margin-left: 20px;
 }
-.
-/*btn style*/
-/* a.wsbutton {
-    background: #ffcc00;    
-    border-radius: 40px;    радиус
-    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset;    внутрення тень
-    font-size: 24px;    
-    font-weight: bold;    
-    line-height: 1.5;   
-    padding: 10px 25px;    
-    margin: 0 auto;    выра
-    text-decoration: none;    
-    transition: all 0.3s;    
-} */
+.slide-title{
+	margin-top: 10px;
+}
+/* ===========================bottom-center-block=========================== */
 
 .bottom-center-block{
 	height: 200px;
+	
+}
+.s-block{
+	height: 66px;
+	background: #1D1B1B;
+	margin-bottom: 1px;
 	background: #383535;
 }
-.send-block1{
+.bottom-center-block:last-child { 
+	margin-bottom: none; 
+}
+.s-block img{
+	height: 50px;
+	width: 50px;
+}
+/* .s-block2{
 	height: 66px;
 	background: #1D1B1B;
 	margin-bottom: 1px;
 }
-.send-block2{
+.s-block3{
 	height: 66px;
 	background: #1D1B1B;
-	margin-bottom: 1px;
-}
-.send-block3{
-	height: 66px;
-	background: #1D1B1B;
-}
-
-/* ===========================block-right============================ */
-.block-right {
-	width: 17%;
-    margin-left: 20px;
-    margin-right: 0;
-}
+} */
+/* ===========================top-right-block============================ */
 
 .top-right-block{
 	height: 320px;
@@ -193,13 +216,16 @@ p {
     margin-top: 1px;
     
 }
+
+/* ===========================top-right-block============================ */
+
 .bottom-right-block{
 	height: 320px;
 	background: #383535;
     margin-top: 1px;
  }
 
- /* ============================footer========================= */
+ /* ==============================footer=============================== */
 
 /* .footer{
     height: 100px;
@@ -228,6 +254,9 @@ p {
 	border-bottom: 2px solid #fff;
 }
 .bottom-left-block .container {
+	display: none;
+}
+.bottom-left-block .container-content {
 	display: flex;
 }
 /*chart*/
@@ -280,7 +309,7 @@ p {
     display: none;
     width: 100px;
     height: 30px;
-    background: #333;
+    background: #aca5d0;
     text-align: center;
     color: rgb(167, 84, 98);
     font-weight: bold;
