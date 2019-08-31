@@ -74,6 +74,7 @@
 	display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-right: 10px;
 }
 .photo-name img{
 	height: 40px;
@@ -131,6 +132,7 @@
 .top-left-block-head li{
 	display: inline-block;
     margin-right: 10px;
+    cursor: pointer;
 }
 .top-left-block-head li a:hover {
 	color: #5252ff;
@@ -161,6 +163,7 @@
 .bottom-left-block-head li{
 	display: inline-block;
     margin-right: 10px;
+    cursor: pointer;
 }
 .bottom-left-block-head li a:hover {
 	color: #5252ff;
@@ -185,6 +188,52 @@
 .Usd p{
 	color: pink;
 }
+
+
+.plan-and-button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.payment-plan{
+	margin-left: 20px;
+	width: 120px;
+}
+.btn-resort{
+	margin-right: 20px;
+	width: 120px;
+}
+a.plan-button {
+	background: none;
+    color: #5252ff;    
+    font-size: 14px;
+    margin: 0 auto;   
+    text-decoration: none;    
+    transition: all 0.3s;    
+    display: block;
+    text-align: center;
+    line-height: 2.5;
+    cursor: pointer;
+}
+
+a.resort-button {
+	background: none;
+    border-radius: 50px;
+    color: white;    
+    font-size: 14px; 
+    margin: 0 auto;   
+    text-decoration: none;    
+    transition: all 0.3s;    
+    border: 2px solid #5252ff;
+    display: block;
+    text-align: center;
+    line-height: 2.5; 
+}
+.resort-button:hover {
+    background: black;
+}
 /* ============================top-center-block============================ */
 
 .top-center-block {
@@ -206,6 +255,7 @@
 .slide-title{
 	padding-top: 10px;
 	background: #383535;
+	color: white;
 }
 .current-debt{
 	background: #383535;
@@ -216,11 +266,11 @@
 }
 .current-debt-name{
 	color: grey;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 .current-debt-sum{
 	color: white;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 .credit-available{
 	background: #383535;
@@ -232,10 +282,10 @@
 }
 .credit-available-name{
 	color: grey;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 .current-debt-sum {
-	margin-right: 10px;
+	margin-right: 20px;
 }
 .cut-off-date-block{
 	margin-top: 1px;
@@ -247,10 +297,10 @@
 }
 .cut-off-date-name {
 	color: grey;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 .cut-off-date {
-	margin-right: 10px;
+	margin-right: 20px;
 	color: #5252ff; 
 }
 .two-buttons{
@@ -261,12 +311,12 @@
 	height: 67px;
 }
 .btn-left{
-	margin-left: 10px;
-	width: 140px;
+	margin-left: 20px;
+	width: 130px;
 }
 .btn-right{
-	margin-right: 10px;
-	width: 140px;
+	margin-right: 20px;
+	width: 130px;
 }
 a.L-button {
 	background: none;
@@ -312,8 +362,8 @@ a.R-button {
 	margin-bottom: 1px;
 	background: #383535;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 }
 .name {
 	width: 100px;
@@ -357,9 +407,24 @@ a.R-button {
     margin-top: 1px;    
 }
 .top-right-block img{
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 }
+.name-of-block p{
+	padding: 30px 0 20px 20px;
+	color: white;
+}
+.circle-img-text{
+	display: flex;
+	align-items: end;
+	justify-content: space-around;
+}
+.text-bill p{
+	width: 120px;
+	font-size: 10px;
+	color: grey;
+}
+
 
 /* ===========================bottom-right-block============================ */
 
@@ -369,18 +434,20 @@ a.R-button {
     margin-top: 1px;
  }
 .bottom-right-block img{
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 }
  /* ==============================footer=============================== */
 
-/* .footer{
+.footer{
     height: 100px;
-    background: black;
-    
-} */
+    color: white;
+    display: flex;
+    display: flex;
+	align-items: center;
+    justify-content: flex-start;    
+}
 	
-
 
 /*/////////////////*/
 
@@ -406,13 +473,37 @@ a.R-button {
 .bottom-left-block .container-content {
 	display: flex;
 }
-/*стили контента таба*/
+/*==========================стили контента таба==============================*/
+.container-content{
+	display: flex;
+	align-items: center;
+}
 .input-block>div{
 	margin: 20px 0 30px;
 }
 .input-block .upper {
 	display: flex;
 	justify-content: space-between;
+}
+.output-elem {
+	height: 40px;
+	width: 250px;
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	margin: 15px 20px 10px 20px;
+}
+.label {
+	margin: 2px 0 0 4px;
+	color: gray;
+}
+.value {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+
+
 }
 .rangeslider{
 	background: #151515;
@@ -509,7 +600,7 @@ a.R-button {
 .slide-title {
 	width: 330px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
     text-align: center;
     align-items: center;
 }
@@ -537,5 +628,7 @@ a.R-button {
     background: none;
     cursor: pointer;
     font-weight: bold;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
