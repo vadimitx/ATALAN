@@ -2,11 +2,6 @@
 	margin: 0;    
 	padding: 0;
 }
-
-/* p {
-	color: white;
-} */
-
 .wrapper{
     background: black;
     height: 800px;
@@ -39,6 +34,16 @@
 	align-items: center;
 	justify-content: flex-start;
 	padding-left: 10px; 
+}
+#search-box{
+	color: white;
+	background: #383535;
+	border: none;
+	width: 300px;
+}
+.icon{
+	background: #383535;
+	color: grey;
 }
 
 .header-menu{
@@ -80,6 +85,12 @@
 	height: 40px;
 	width: 40px;
 	margin-left: 20px;
+}
+#name-input{
+	background: #383535;
+	border:none;
+	box-sizing:none;
+	border-color: #383535;
 }
 
 /* =============================three-blocks======================== */
@@ -188,15 +199,12 @@
 .Usd p{
 	color: pink;
 }
-
-
 .plan-and-button {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 20px;
 }
-
 .payment-plan{
 	margin-left: 20px;
 	width: 120px;
@@ -382,6 +390,7 @@ a.R-button {
 .send-block{
 	color: #5252ff;
 	margin-left: 10px;
+	cursor: pointer;
 }
 .bottom-center-block:last-child { 
 	margin-bottom: 0;
@@ -390,15 +399,7 @@ a.R-button {
 	height: 50px;
 	width: 50px;
 }
-/* .s-block2{
-	height: 66px;
-	background: #1D1B1B;
-	margin-bottom: 1px;
-}
-.s-block3{
-	height: 66px;
-	background: #1D1B1B;
-} */
+
 /* ===========================top-right-block============================ */
 
 .top-right-block{
@@ -411,21 +412,66 @@ a.R-button {
 	height: 40px;
 }
 .name-of-block p{
-	padding: 30px 0 20px 20px;
+	padding: 20px 0 24px 20px;
 	color: white;
+}
+.img-text{
+	background: url(../img/fade-freetoedit-bg.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+	font-size: 14px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	margin: 4px 14px 0 16px;
 }
 .circle-img-text{
 	display: flex;
 	align-items: end;
-	justify-content: space-around;
+	margin-bottom: 14px;
 }
-.text-bill p{
+.text-block p{
 	width: 120px;
 	font-size: 10px;
 	color: grey;
+	margin:4px 0 8px;
 }
-
-
+.text-block h6{
+	color: #d4c6c6;
+}
+.text-block h5{
+	color: white;
+}
+.img-text2{
+	background: url(../img/Pink-gradient-55.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+	font-size: 14px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	margin: 4px 14px 0 16px;
+}
+.circle-img-text2{
+	display: flex;
+	align-items: end;
+	margin-bottom: 14px;
+}
+.text-block2 h6{
+	color: #d4c6c6;
+	margin-bottom: 4px;
+}
+.text-block2 h5{
+	color: white;
+}
 /* ===========================bottom-right-block============================ */
 
 .bottom-right-block{
@@ -502,8 +548,6 @@ a.R-button {
 	display: flex;
 	align-items: center;
 	margin-right: 10px;
-
-
 }
 .rangeslider{
 	background: #151515;
@@ -631,4 +675,3 @@ a.R-button {
     margin-left: 40px;
     margin-right: 40px;
 }
-
