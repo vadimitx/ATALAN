@@ -13,14 +13,16 @@
 <div class="wrapper">
     <div class="header">
         <div class="logo">
-            <p>Logo</p>
+            <div class="part1"></div>
+            <div class="part2"></div>
+            <div class="part3"></div>
         </div>
-         <div class="search-box">
+        <div class="search-box">
             <div class="container-2">
                 <span class="icon"><i class="fa fa-search"></i></span>
                 <input type="search" id="search-box" placeholder="Search Payments Transfers Transactions..." />
             </div>
-            </div>
+        </div>
         <div class="header-menu">
             <ul>
                 <li><a href="#" class="btn">Transfers</a></li>
@@ -68,21 +70,21 @@
                     <div id="tooltip"></div>
                 </div>
                 <div class="top-left-block-footer">
-                        <div class="TL"><p>TL</p></div>
-                        <div class="Euro"><p>Euro</p></div>
-                        <div class="Usd"><p>Usd</p></div>
+                    <div class="TL"><p>TL</p></div>
+                    <div class="Euro"><p>Euro</p></div>
+                    <div class="Usd"><p>Usd</p></div>
                 </div>
             </div>
             <div class="bottom-left-block">
                 <div class="bottom-left-block-head">
                     <div class="title">
                         <p>Loan Calculator</p>
-                    </div>            
-                        <ul id="tabs">
-                            <li><a id="tab1" class="active">Consumer Loan</a></li>
-                            <li><a id="tab2">Auto Loan</a></li>
-                            <li><a id="tab3">Mortgage</a></li>  
-                        </ul>                   
+                    </div>
+                    <ul id="tabs">
+                        <li><a id="tab1" class="active">Consumer Loan</a></li>
+                        <li><a id="tab2">Auto Loan</a></li>
+                        <li><a id="tab3">Mortgage</a></li>
+                    </ul>
                 </div>
                 <div class="container" id="tab1C">
                     <div class="container-content">
@@ -90,23 +92,26 @@
                             <div class="loan-block">
                                 <div class="upper">
                                     <label>loan Amount</label>
-                                    <input type="text" class="loan" value="">
+                                    <input type="number" class="loan" value="">
                                 </div>
-                                <input class="loan" type="range" min="10" max="1000" step="10" value="600" data-orientation="horizontal">
+                                <input class="loan" type="range" min="0" max="1000" step="1" value="600"
+                                       data-orientation="horizontal">
                             </div>
                             <div class="term-block">
                                 <div class="upper">
                                     <label>Term</label>
-                                    <input class="term" type="text" value="">
+                                    <input class="term" type="number" value="">
                                 </div>
-                                <input class="term" type="range" min="10" max="1000" step="10" value="500" data-orientation="horizontal">
+                                <input class="term" type="range" min="0" max="1000" step="1" value="500"
+                                       data-orientation="horizontal">
                             </div>
                             <div class="amount-block">
                                 <div class="upper">
                                     <label>Installment Amount</label>
-                                    <input  class="amount"type="text" value="">
+                                    <input class="amount" type="number" value="">
                                 </div>
-                                <input class="amount" type="range" min="10" max="1000" step="10" value="800" data-orientation="horizontal">
+                                <input class="amount" type="range" min="0" max="1000" step="1" value="800"
+                                       data-orientation="horizontal">
                             </div>
                         </div>
                         <div class="output-block">
@@ -122,7 +127,7 @@
                                 <div class="label">Payback</div>
                                 <div class="value">150.000,00 TL</div>
                             </div>
-                             <div class="plan-and-button">
+                            <div class="plan-and-button">
                                 <div class="payment-plan">
                                     <a href="#" class="plan-button">Payment Plan</a>
                                 </div>
@@ -160,13 +165,13 @@
                 </div>
                 <div class="current-debt">
                     <div class="current-debt-name">
-                        <p>Current Debt </p>                        
+                        <p>Current Debt </p>
                     </div>
                     <div class="current-debt-sum">
                         <p>1.400,00 TL</p>
                     </div>
                 </div>
-                <div class="credit-available"> 
+                <div class="credit-available">
                     <div class="credit-available-name">
                         <p>Credit Available</p>
                     </div>
@@ -176,10 +181,10 @@
                 </div>
                 <div class="cut-off-date-block">
                     <div class="cut-off-date-name">
-                        <p>Cut off Date</p>                        
+                        <p>Cut off Date</p>
                     </div>
                     <div class="cut-off-date">
-                        <p>03.05.2017</p>                        
+                        <p>03.05.2017</p>
                     </div>
                 </div>
                 <div class="two-buttons">
@@ -194,7 +199,7 @@
             <div class="bottom-center-block">
                 <div class="s-block">
                     <div class="img">
-                        <img src="img/cat-circle.png" alt="">                        
+                        <img src="img/cat-circle.png" alt="">
                     </div>
                     <div class="name">
                         <p>Alper<br>Tornaci</p>
@@ -203,12 +208,12 @@
                         <p>00.00 TL</p>
                     </div>
                     <div class="send-block">
-                        <p>Send</p>                        
+                        <p>Send</p>
                     </div>
                 </div>
                 <div class="s-block">
-                     <div class="img">
-                        <img src="img/cat-circle.png" alt="">                        
+                    <div class="img">
+                        <img src="img/cat-circle.png" alt="">
                     </div>
                     <div class="name">
                         <p>Tugrul<br>Kucukmustafa</p>
@@ -217,12 +222,12 @@
                         <p>00.00 TL</p>
                     </div>
                     <div class="send-block">
-                        <p>Send</p>                        
+                        <p>Send</p>
                     </div>
                 </div>
                 <div class="s-block">
-                     <div class="img">
-                        <img src="img/cat-circle.png" alt="">                        
+                    <div class="img">
+                        <img src="img/cat-circle.png" alt="">
                     </div>
                     <div class="name">
                         <p>Salim<br>Tornaci</p>
@@ -231,10 +236,10 @@
                         <p>00.00 TL</p>
                     </div>
                     <div class="send-block">
-                        <p>Send</p>                        
+                        <p>Send</p>
                     </div>
                 </div>
-            </div>          
+            </div>
         </div>
         <div class="block-right">
             <div class="top-right-block">
@@ -303,13 +308,11 @@
                         <h5>324,78 TL</h5>
                     </div>
                 </div>
-
-                <!-- <img src="img/Pink-gradient-3.png" alt=""> -->
             </div>
         </div>
     </div>
     <div class="footer">
-        <p>connecting to financial index...</p>
+        <p>financial index...</p>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -319,6 +322,7 @@
 <script src="js/customSlider.js"></script>
 <script src="js/customChart.js"></script>
 <script src="js/customTab.js"></script>
+<script src="js/customRange.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
