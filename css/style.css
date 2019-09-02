@@ -1,11 +1,9 @@
-* {  
-	margin: 0;    
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+	margin: 0;
 	padding: 0;
+	font-family: 'Roboto', sans-serif;
 }
-
-/* p {
-	color: white;
-} */
 
 .wrapper{
     background: black;
@@ -425,7 +423,9 @@ a.R-button {
 	color: white;
 	margin-left: 10px;
 }
-.tl-block {
+.tl-block input {
+	border: none;
+	background: none;
 	width: 90px;
 	text-align: right;
 	color: gray;
@@ -434,9 +434,11 @@ a.R-button {
     border-bottom-color: gray;
     margin-left: 10px;  
 }
-.send-block{
+.send-block button {
+	border: none;
+	background: none;
 	color: #5252ff;
-	margin-left: 10px;
+	padding: 10px;
 	cursor: pointer;
 }
 .bottom-center-block:last-child { 
@@ -458,9 +460,9 @@ a.R-button {
 /* ===========================top-right-block============================ */
 
 .top-right-block{
-	height: 320px;
+	height: 340px;
 	background: #383535;
-    margin-top: 1px;    
+    margin-top: 1px;
 }
 .top-right-block img{
 	width: 40px;
@@ -530,7 +532,7 @@ a.R-button {
 /* ===========================bottom-right-block============================ */
 
 .bottom-right-block{
-	height: 320px;
+	height: 298px;
 	background: #383535;
     margin-top: 1px;
  }
@@ -556,7 +558,7 @@ a.R-button {
 #tabs, #tabs-chart {
 	list-style: none;
 	padding: 0;
-
+	line-height: 50px;
 }
 #tabs {
 	text-align: right;
@@ -566,7 +568,9 @@ a.R-button {
 
 }
 #tabs li a.active, #tabs-chart li a.active {
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #5252ff;
+	color: #5252ff;
+	display: block;
 }
 .bottom-left-block .container {
 	display: none;
@@ -580,11 +584,26 @@ a.R-button {
 	align-items: center;
 }
 .input-block>div{
-	margin: 20px 0 30px;
+	margin: 20px;
 }
 .input-block .upper {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.input-block .upper label {
+	font-size: 12px;
+	color: #aaa;
+}
+.input-block .upper input {
+	background: none;
+	border: none;
+	border-bottom: 1px solid #5d5d5d;
+	margin-left: 20px;
+	text-align: right;
+	font-size: 14px;
+	color: #fff;
+	width: 50%;
 }
 .output-elem {
 	height: 40px;
@@ -610,14 +629,17 @@ a.R-button {
 	background: #151515;
 }
 .rangeslider--horizontal {
-	height: 4px;
+	height: 2px;
 }
 .rangeslider__handle {
-	height: 22px;
-	width: 22px;
+	height: 16px;
+	width: 16px;
 }
 .rangeslider__fill {
-	background: #cfcfcf;
+	background: #fff;
+}
+.rangeslider--horizontal .rangeslider__handle {
+	top: -8px;
 }
 /*chart*/
 .chart{
@@ -669,7 +691,7 @@ a.R-button {
     display: none;
     width: 100px;
     height: 30px;
-    background: #aca5d0;
+    background: #252525;
     text-align: center;
     color: rgb(167, 84, 98);
     font-weight: bold;
@@ -683,7 +705,7 @@ a.R-button {
 	content: ' ';
 	width: 10px;
 	height: 10px;
-	background: #333;
+	background: #252525;
 	display: block;
 	position: absolute;
 	bottom: -5px;
